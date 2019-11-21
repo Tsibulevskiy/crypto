@@ -1,0 +1,965 @@
+@import "colors"
+@import "fonts"
+
+body
+	overflow-x: hidden
+
+.gradient-wrapper_header
+	width: 100%
+	height: 1150px
+	background-image: $gradient
+
+header
+	margin-top: 45px
+	margin-bottom: 70px
+
+.logo
+	color: $special-text
+	font-family: $Avenir
+	font-size: 48px
+	font-weight: 700
+
+nav
+	margin-top: 20px
+	margin-right: 20px
+	text-align: right
+	li
+		display: inline-block
+		&:nth-of-type(n+2)
+			margin-left: 40px
+	a
+		font-family: $Avenir-reg
+		font-size: 24px
+		color: $white
+
+.sign-up
+	button
+		width: 166px
+		height: 58px
+		border-radius: 29px
+		border: 1px solid $border-color
+		text-align: center
+		font-family: $Avenir
+		font-size: 24px
+		color: $border-color
+
+.ico-start
+	max-width: 269px
+	float: left
+	font-family: $Avenir-reg
+	p
+		font-size: 48px
+		color: $white
+	span
+		font-size: 24px
+		color: $special-text
+
+.ico-duration
+	max-width: 202px
+	text-transform: uppercase
+	margin-left: auto
+	margin-right: -20px
+	padding-top: 10px
+	p
+		margin-bottom: 10px
+		font-family: $Avenir
+		font-size: 20px
+		color: $white
+	span
+		font-family: $Avenir-reg
+		font-size: 24px
+		color: $special-text
+
+.remaining-time
+	margin-top: 35px
+	span
+		font-family: $Avenir
+		font-size: 48px
+		color: $white
+	b
+		font-family: $Avenir-reg
+		color: $line-color
+		font-size: 48px
+		letter-spacing: 5px
+	p
+		font-family: $Avenir
+		font-size: 20px
+		color: $white
+
+.download-app
+		margin-top: 100px
+		font-family: $Avenir
+		color: $white
+		p
+			font-size: 24px
+			margin-bottom: 38px
+		span
+			font-size: 36px
+		a
+			display: inline-block
+			&:nth-of-type(1)
+				margin-right: 20px
+
+.phone-img
+	img
+		max-width: 528px
+
+.problem
+	margin-top: 100px
+	width: 100%
+	padding: 130px 70px 105px
+	border-radius: 10px
+	background-color: $white
+	box-shadow: 0 2px 30px rgba(0, 0, 0, 0.25)
+	&-title
+		color: $text-color
+		margin-bottom: 105px
+		h2
+			font-family: $Avenir
+			font-size: 48px
+			margin-bottom: 30px
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				top: -25px
+				left: 0
+				width: 51px
+				height: 1px
+				border: 2px solid $line-color
+		p
+			font-family: $Avenir-reg
+			font-size: 18px
+			line-height: 1.5
+	&-deskription
+		color: $text-color
+		h6
+			font-family: $Avenir
+			font-size: 24px
+			margin: 24px 0 15px
+		hr
+			border: 2px solid $line-color
+			width: 51px
+			height: 1px
+			margin: 0 0 30px
+		p
+			font-family: $Avenir-reg
+			font-size: 18px
+			line-height: 1.2
+
+.solution
+	margin-top: 508px
+	width: 100%
+	padding: 130px 70px 105px
+	border-radius: 10px
+	background-color: $white
+	box-shadow: 0 2px 30px rgba(0, 0, 0, 0.25)
+	&-title
+		color: $text-color
+		margin-bottom: 105px
+		h2
+			font-family: $Avenir
+			font-size: 48px
+			margin-bottom: 30px
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				top: -25px
+				left: 0
+				width: 51px
+				height: 1px
+				border: 2px solid $special-text
+		p
+			font-family: $Avenir-reg
+			font-size: 18px
+			line-height: 1.5
+	&-deskription
+		color: $text-color
+		h6
+			font-family: $Avenir
+			font-size: 24px
+			margin: 24px 0 15px
+		hr
+			border: 2px solid $special-text
+			width: 51px
+			height: 1px
+			margin: 0 0 30px
+		p
+			font-family: $Avenir-reg
+			font-size: 18px
+			line-height: 1.2
+
+.gradient-wrapper_sign
+	width: 100%
+	background: $form-color
+	margin-top: 110px
+	padding: 130px 0
+
+input
+	&::-webkit-input-placeholder
+		color: $place-holder
+		font-family: $Avenir
+		font-size: 18px
+	&:-ms-input-placeholder
+		color: $place-holder
+		font-family: $Avenir
+		font-size: 18px
+	&::-ms-input-placeholder
+		color: $place-holder
+		font-family: $Avenir
+		font-size: 18px
+	&::placeholder
+		color: $place-holder
+		font-family: $Avenir
+		font-size: 18px
+
+.create-account
+	width: 503px
+	margin-left: auto
+	padding: 50px 30px 40px
+	border-radius: 16px
+	box-shadow: 0 2px 25px rgba(0, 0, 0, 0.15)
+	background-image: $form-gradient
+	p
+		font-family: $Avenir
+		font-size: 24px
+		text-transform: uppercase
+		color: $white
+		margin-bottom: 32px
+	label
+		display: block
+		margin-bottom: 17px
+		font-family: $Avenir
+		font-size: 18px
+		text-transform: uppercase
+		color: $label-color
+		&:nth-of-type(n+2)
+			margin-top: 32px
+	input
+		width: 100%
+		height: 51px
+		padding-left: 20px
+		border-radius: 26px
+		background-color: $input-color
+		caret-color: $place-holder
+		font-family: $Avenir
+		font-size: 18px
+		color: $place-holder
+		&[type="submit"]
+			display: block
+			width: 166px
+			height: 58px
+			border: 1px solid $special-text
+			background-color: $special-text
+			margin: 66px auto 0
+			padding: 0
+			font-size: 24px
+			color: $white
+
+.exclusive-invite
+	margin-top: 180px
+	margin-left: 40px
+	color: $white
+	font-family: $Avenir
+	h4
+		font-size: 48px
+		margin-bottom: 34px
+	span
+		font-size: 36px
+		color: $border-color
+	p
+		font-family: $Avenir-reg
+		font-size: 16px
+		line-height: 1.5
+
+.ecosystem
+	margin-top: 113px
+	&-block
+		margin-left: -40px
+		&_right
+			margin-left: -40px
+	&-title
+		text-align: center
+		margin-bottom: 92px
+		h3
+			font-family: $Avenir
+			font-size: 48px
+			color: $text-color
+	&-deskription
+		width: 263px
+		height: 81px
+		padding: 22px 19px 23px 24px
+		box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2)
+		img
+			float: left
+			margin-right: 24px
+		p
+			margin-top: 6px
+			font-family: $Avenir-reg
+			font-size: 18px
+			color: $text-color
+		&:nth-of-type(n+2)
+			margin-top: 40px
+		&_right
+			width: 338px
+			height: 81px
+			padding: 22px 19px 23px 24px
+			box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2)
+			img
+				float: left
+				margin-right: 24px
+			p
+				margin-top: 6px
+				font-family: $Avenir-reg
+				font-size: 18px
+				color: $text-color
+			&:nth-of-type(n+2)
+				margin-top: 30px
+	&-circle
+		background: url(../img/circle-new.png)
+		width: 570px
+		height: 410px
+		margin-top: 10px
+		padding-top: 157px
+		margin-left: -50px
+		text-align: center
+		img
+			margin-left: auto
+			margin-right: 210px
+			margin-bottom: 21px
+		p
+			font-family: $Avenir-reg
+			font-size: 18px
+			color: $text-color
+			margin-left: 75px
+
+.consulting-fix
+	p
+		margin-top: 10px
+
+.reasons
+	margin-top: 200px
+	margin-bottom: 180px
+	&-indicators
+		width: 396px
+		height: 321px
+		position: relative
+		margin: 0 auto
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25)
+		border-radius: 5px
+		background: $reasons-color url(../img/oval.png) no-repeat center
+		text-align: center
+		&_index
+			width: 96px
+			height: 96px
+			position: absolute
+			top: -56px
+			right: 36px
+			box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15)
+			border-radius: 5px
+			background-color: $line-color
+			padding-top: 19px
+			font-family: $Avenir
+			font-size: 24px
+			color: $white
+			p
+				font-family: $Avenir-reg
+				font-size: 18px
+				margin-top: 3px
+		&_benefits
+			width: 66px
+			padding-top: 52px
+			margin-left: 62px
+			color: $white
+			font-family: $Avenir
+			font-size: 24px
+			p
+				font-family: $Avenir-reg
+				font-size: 18px
+				margin-top: 3px
+		&_savings
+			width: 63px
+			margin-top: 60px
+			margin-left: auto
+			margin-right: 48px
+			color: $white
+			font-family: $Avenir
+			font-size: 24px
+			p
+				font-family: $Avenir-reg
+				font-size: 18px
+				margin-top: 3px
+		&_customers
+			width: 179px
+			height: 104px
+			position: absolute
+			left: -65px
+			bottom: 57px
+			padding-top: 25px
+			box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15)
+			border-radius: 5px
+			background-color: $special-text
+			font-family: $Avenir
+			font-size: 24px
+			color: $white
+			p
+				font-family: $Avenir-reg
+				font-size: 18px
+				margin-top: 5px
+		&_businesses
+			width: 212px
+			height: 109px
+			position: absolute
+			right: 36px
+			bottom: -39px
+			padding-top: 28px
+			box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15)
+			border-radius: 5px
+			background-color: $businesses-color
+			font-family: $Avenir
+			font-size: 24px
+			color: $white
+			p
+				font-family: $Avenir-reg
+				font-size: 18px
+				margin-top: 5px
+	&-title
+		margin-top: 35px
+		color: $text-color
+		h4
+			font-family: $Avenir
+			font-size: 48px
+			position: relative
+			margin-bottom: 45px
+			&:after
+				content: ''
+				position: absolute
+				top: -12px
+				left: 0
+				width: 51px
+				height: 1px
+				border: 2px solid $need-line
+		p
+			font-family: $Avenir-reg
+			font-size: 18px
+			line-height: 32px
+
+.gradient-wrapper_get
+	width: 100%
+	background: $reasons-color
+
+.benefit
+	margin-top: 80px
+	&-title
+		text-align: center
+		margin-bottom: 105px
+		h3
+			font-family: $Avenir
+			font-size: 48px
+			color: $white
+
+.under-bed, .in-bank, .in-lorem
+	text-align: center
+	color: $white
+	p
+		font-family: $Avenir
+		font-size: 64px
+		font-weight: 700
+	b
+		font-size: 36px
+
+.check-line
+	margin-top: 45px
+	hr
+		width: 1047px
+		height: 3px
+		border: none
+		background-color: $white
+	ul
+		margin-top: -24px
+	li
+		display: inline-block
+		position: relative
+		width: 27px
+		height: 27px
+		border: 1px solid $white
+		border-radius: 50%
+		background-color: $reasons-color
+		margin-left: 330px
+		&:nth-of-type(n+2)
+			margin-left: 182px
+		a
+			display: block
+			width: 100%
+			height: 100%
+		span
+			position: absolute
+			left: -55px
+			bottom: -50px
+			display: block
+			width: 158px
+			font-family: $Avenir
+			font-size: 18px
+			text-transform: uppercase
+			color: $white
+	p
+		margin-top: 140px
+		margin-bottom: 113px
+		font-family: $Avenir-reg
+		font-size: 18px
+		line-height: 1.4
+		color: $white
+
+.fix-text
+	left: -25px !important
+
+.ui-tabs-active
+	background-color: $line-color !important
+	span
+		color: $line-color !important
+
+.calculator
+	margin-top: 130px
+	&-title
+		h3
+			position: relative
+			font-family: $Avenir
+			font-size: 48px
+			color: $text-color
+			&:after
+				content: ''
+				position: absolute
+				top: -20px
+				left: 0
+				width: 51px
+				height: 1px
+				border: 2px solid $need-line
+	&-result
+		max-width: 264px
+		margin-left: auto
+		p
+			font-family: $Avenir
+			font-size: 32px
+			color: $text-color
+			margin-bottom: 15px
+		span
+			font-family: $Avenir
+			font-size: 48px
+			font-weight: 700
+			color: $special-text
+		button
+			width: 232px
+			height: 58px
+			margin-top: 50px
+			border-radius: 29px
+			background-color: $special-text
+			text-align: center
+			font-family: $Avenir
+			font-size: 24px
+			color: $white
+
+.calculator-form
+	margin-top: 100px
+	&__plug
+		position: absolute
+		width: 100%
+		height: 10px
+		input
+			position: relative
+			transform: translateX(-50%)
+			bottom: 30px
+			margin-left: 3px
+	&__steps
+		position: absolute
+		top: calc(100% + 10px)
+		display: flex
+		justify-content: space-between
+		width: 100%
+		left: 50%
+		transform: translateX(-50%)
+		height: 10px
+	&__step
+		position: relative
+		&:before
+			display: block
+			content: ''
+			position: absolute
+			width: 8px
+			height: 8px
+			border-radius: 100%
+			background: #9c9c9c
+			bottom: calc(100% + 15px)
+		span
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			white-space: nowrap
+			font-family: $Avenir-reg
+			color: $dot-color
+			font-size: 16px
+	&__invest
+		display: flex
+		align-items: center
+		label
+			margin-right: 40px
+			max-width: 99px
+			font-family: $Avenir
+			font-size: 28px
+			color: $text-color
+		input
+			width: 93px
+			height: 32px
+			text-align: center
+			box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(0, 0, 0, 0.1)
+			border-radius: 5px
+			border: 1px solid $special-text
+			font-family: $Avenir
+			font-size: 18px
+			color: $special-text
+	&__term
+		display: flex
+		align-items: center
+		margin-top: 120px
+		margin-bottom: 120px
+		label
+			margin-top: -20px
+			margin-right: 40px
+			display: block
+			float: left
+			max-width: 99px
+			font-family: $Avenir
+			font-size: 28px
+			color: $text-color
+		input
+			width: 93px
+			height: 32px
+			text-align: center
+			box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(0, 0, 0, 0.1)
+			border-radius: 5px
+			border: 1px solid $special-text
+			font-family: $Avenir
+			font-size: 18px
+			color: $special-text
+	&__slider.noUi-horizontal
+		background: #d1d1d1 !important
+		box-shadow: none;
+		height: 4px
+		.noUi-handle
+			width: 32px
+			height: 32px
+			position: absolute
+			top: -15px
+			z-index: 2
+			background-color: $special-text
+			border: none
+			box-shadow: none
+			border-radius: 50%
+			margin-left: -16px
+			cursor: pointer
+			&:after, &:before
+				display: none
+			&:active
+				box-shadow: 0 2px 10px $special-text
+		.noUi-tooltip
+	    width: 93px
+	    height: 32px
+	    text-align: center
+	    border-radius: 5px
+	    border: 1px solid #4d92f4
+	    font-family: "Avenir-Medium"
+	    font-size: 18px
+	    color: #4d92f4
+
+.invest-slider
+	width: 580px
+	height: 1px
+	display: inline-block
+	border: 3px solid $slider-color
+	position: relative
+	text-align: left
+
+.term-slider
+	width: 580px
+	height: 1px
+	display: inline-block
+	border: 3px solid $slider-color
+	position: relative
+	text-align: left
+
+#invest, #term
+	position: absolute
+
+
+.gradient-wrapper_roadmap
+	width: 100%
+	height: 1830px
+	background: $reasons-color
+
+.roadmap
+	&-title
+		text-align: center
+		margin-top: 115px
+		margin-bottom: 100px
+		h4
+			font-family: $Avenir
+			font-size: 48px
+			font-weight: 700
+			letter-spacing: 2px
+			color: $white
+	&-month
+		max-width: 469px
+		margin-left: auto
+		h6
+			font-family: $Avenir-reg
+			font-size: 24px
+			color: $white
+			margin-bottom: 28px
+		p
+			font-family: $Avenir-reg
+			font-size: 18px
+			color: rgba(255, 255, 255, 0.5)
+			line-height: 1.4
+		b
+			font-family: $Avenir
+			font-size: 24px
+			font-weight: 700
+
+.june
+	position: relative
+	text-align: right
+	&:after
+		content: ''
+		width: 50px
+		height: 166px
+		position: absolute
+		top: -10px
+		right: -80px
+		background: url(../img/traversed.png)
+
+.july
+	margin-top: 63px
+	margin-right: -10px
+	position: relative
+	h6
+		margin-bottom: 50px
+	&:after
+		content: ''
+		width: 50px
+		height: 166px
+		position: absolute
+		top: -10px
+		left: -80px
+		background: url(../img/traversed.png)
+
+.august
+	margin-top: 40px
+	position: relative
+	text-align: right
+	&:after
+		content: ''
+		width: 50px
+		height: 166px
+		position: absolute
+		top: -10px
+		right: -80px
+		background: url(../img/traversed.png)
+
+.september
+	margin-top: 60px
+	position: relative
+	h6
+		color: $roadmap-active
+	p
+		color: $white
+	&:after
+		content: ''
+		width: 88px
+		height: 185px
+		position: absolute
+		top: -25px
+		left: -90px
+		background: url(../img/traversed-active.png)
+
+.october
+	position: relative
+	text-align: right
+	margin-top: 50px
+	h6
+		color: rgba(255, 255, 255, 0.3)
+	&:after
+		content: ''
+		width: 50px
+		height: 167px
+		position: absolute
+		top: -10px
+		right: -80px
+		background: url(../img/traversed-nonactive.png)
+
+.november
+	position: relative
+	margin-top: 50px
+	h6
+		color: rgba(255, 255, 255, 0.3)
+	&:after
+		content: ''
+		width: 50px
+		height: 50px
+		position: absolute
+		top: -10px
+		left: -70px
+		background: url(../img/traversed-last.png)
+
+.forget-download
+	width: 100%
+	margin-top: -350px
+	box-shadow: 0 2px 30px rgba(0, 0, 0, 0.25)
+	border-radius: 10px
+	background-image: $gradient
+	&_photo
+		margin-top: 71px
+		img
+			margin: 0 auto 71px
+	&_description
+		margin-top: 200px
+		font-family: $Avenir
+		h4
+			margin-bottom: 34px
+			font-size: 48px
+			color: $white
+			span
+				font-size: 36px
+				color: $border-color
+		p
+			max-width: 553px
+			margin-bottom: 34px
+			color: $white
+			font-family: $Avenir-reg
+			font-size: 20px
+			line-height: 1.4
+		a
+			display: inline-block
+			&:nth-of-type(1)
+				margin-right: 19px
+
+.meet-taem
+	&_title
+		margin-top: 120px
+		margin-bottom: 135px
+		h5
+			font-family: $Avenir
+			font-size: 48px
+			color: $text-color
+			position: relative
+			&:after
+				content: ''
+				width: 51px
+				height: 1px
+				position: absolute
+				top: -12px
+				left: 0
+				border: 2px solid $need-line
+
+.human-description
+	text-align: center
+	max-width: 300px
+	margin: 0 auto
+	p
+		margin-top: 22px
+		font-family: $Avenir-reg
+		font-size: 18px
+		color: $dot-color
+		line-height: 1.5
+	span
+		font-family: $Avenir
+		font-size: 20px
+		color: $text-color
+	.name
+		margin-top: 0
+		margin-bottom: 15px
+		font-family: $Avenir
+		font-size: 32px
+		color: $special-text
+
+.photo-block
+	width: 162px
+	height: 162px
+	margin: 0 auto 20px
+	background-color: $slider-color
+	border-radius: 50%
+	position: relative
+	img
+		object-fit: cover
+		width: 100%
+		height: 100%
+		border-radius: 50%
+		position: absolute
+
+.bottom
+	margin-top: 58px
+
+.slick-arrow-right
+	position: absolute
+	right: -20px
+	bottom: calc(100% - 57%)
+	cursor: pointer
+
+.slick-arrow-left
+	position: absolute
+	left: -20px
+	bottom: calc(100% - 57%)
+	cursor: pointer
+
+.slick-dots
+	bottom: -40px !important
+
+footer
+	margin-top: 160px
+	margin-bottom: 80px
+	.footer-logo
+		p
+			font-family: $Avenir
+			font-size: 48px
+			font-weight: 700
+			color: $need-line
+	.footer-nav
+		margin-top: 20px
+		li
+			display: inline-block
+			font-family: $Avenir-reg
+			font-size: 24px
+			color: $text-color
+			&:nth-of-type(n+2)
+				margin-left: 40px
+
+.social-links
+	margin-top: 10px
+	a
+		display: inline-block
+		&:nth-of-type(2)
+			margin-left: 16px
+
+.tablet
+	display: none
+
+.mob
+	display: none
+
+
+@font-face
+	font-family: 'Avenir-Medium'
+	src: url('../fonts/Avenir-medium/AvenirNextCyr-Medium.eot')
+	src: url('../fonts/Avenir-medium/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Avenir-medium/AvenirNextCyr-Medium.woff') format('woff'),
+	url('../fonts/Avenir-medium/AvenirNextCyr-Medium.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'Avenir-Regular'
+	src: url('../fonts/Avenir-regular/AvenirNextCyr-Regular.eot')
+	src: url('../fonts/Avenir-regular/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Avenir-regular/AvenirNextCyr-Regular.woff') format('woff'),
+	url('../fonts/Avenir-regular/AvenirNextCyr-Regular.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
